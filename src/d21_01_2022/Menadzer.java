@@ -1,7 +1,5 @@
 package d21_01_2022;
 
-import java.util.ArrayList;
-
 public class Menadzer extends Radnik {
 
 	public Menadzer(String imeIPrezime) {

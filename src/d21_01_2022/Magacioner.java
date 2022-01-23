@@ -1,7 +1,5 @@
 package d21_01_2022;
 
-import java.util.ArrayList;
-
 public class Magacioner extends Radnik {
 
 	public Magacioner(String imeIPrezime) {
