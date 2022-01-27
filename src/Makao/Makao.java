@@ -44,15 +44,7 @@ public class Makao {
 			if (this.odigraneKarte.get(odigraneKarte.size() - 1).daLiJeMogucePoklopiti(broj, znak)) {
 				this.odigraneKarte.add(this.igraci.get(index).odigrajKartu(broj, znak));
 				if (broj == 7) {
-					if (this.index < 3) {
-						this.igraci.get(this.index + 1).dodajKartu(this.spilKarata.izvuciRandom());
-						this.igraci.get(this.index + 1).dodajKartu(this.spilKarata.izvuciRandom());
-						this.sledeci();
-					} else {
-						this.igraci.get(0).dodajKartu(this.spilKarata.izvuciRandom());
-						this.igraci.get(0).dodajKartu(this.spilKarata.izvuciRandom());
-						this.sledeci();
-					}
+					this.izvucenBrojSedam();
 				} else if (broj == 8) {
 					this.sledeci();
 					this.sledeci();
@@ -66,18 +58,7 @@ public class Makao {
 							this.igraci.get(index).dodajKartu(this.spilKarata.izvuciRandom());
 						}
 				} else if (broj == 2 && znak.equals("detelina")) {
-					if (this.index >= 1) {
-						this.igraci.get(index - 1).dodajKartu(this.spilKarata.izvuciRandom());
-						this.igraci.get(index - 1).dodajKartu(this.spilKarata.izvuciRandom());
-						this.igraci.get(index - 1).dodajKartu(this.spilKarata.izvuciRandom());
-						this.igraci.get(index - 1).dodajKartu(this.spilKarata.izvuciRandom());
-					} else {
-						this.igraci.get(3).dodajKartu(this.spilKarata.izvuciRandom());
-						this.igraci.get(3).dodajKartu(this.spilKarata.izvuciRandom());
-						this.igraci.get(3).dodajKartu(this.spilKarata.izvuciRandom());
-						this.igraci.get(3).dodajKartu(this.spilKarata.izvuciRandom());
-
-					}
+					this.izvucenaDvojkaDetelina();
 					this.sledeci();
 
 				} else {
@@ -89,6 +70,33 @@ public class Makao {
 			System.out.println("\nGreska, igrac nema tu kartu u ruci");
 		}
 
+	}
+
+	private void izvucenaDvojkaDetelina() {
+		if (this.index >= 1) {
+			this.igraci.get(index - 1).dodajKartu(this.spilKarata.izvuciRandom());
+			this.igraci.get(index - 1).dodajKartu(this.spilKarata.izvuciRandom());
+			this.igraci.get(index - 1).dodajKartu(this.spilKarata.izvuciRandom());
+			this.igraci.get(index - 1).dodajKartu(this.spilKarata.izvuciRandom());
+		} else {
+			this.igraci.get(3).dodajKartu(this.spilKarata.izvuciRandom());
+			this.igraci.get(3).dodajKartu(this.spilKarata.izvuciRandom());
+			this.igraci.get(3).dodajKartu(this.spilKarata.izvuciRandom());
+			this.igraci.get(3).dodajKartu(this.spilKarata.izvuciRandom());
+
+		}
+	}
+
+	private void izvucenBrojSedam() {
+		if (this.index < 3) {
+			this.igraci.get(this.index + 1).dodajKartu(this.spilKarata.izvuciRandom());
+			this.igraci.get(this.index + 1).dodajKartu(this.spilKarata.izvuciRandom());
+			this.sledeci();
+		} else {
+			this.igraci.get(0).dodajKartu(this.spilKarata.izvuciRandom());
+			this.igraci.get(0).dodajKartu(this.spilKarata.izvuciRandom());
+			this.sledeci();
+		}
 	}
 
 	public void izvuciKartu() {
