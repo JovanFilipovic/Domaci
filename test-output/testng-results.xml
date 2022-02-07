@@ -2,20 +2,24 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-02-06T20:23:04 CET" name="Default suite" finished-at="2022-02-06T20:23:28 CET" duration-ms="23831">
+  <suite started-at="2022-02-07T14:40:32 CET" name="Default suite" finished-at="2022-02-07T14:40:41 CET" duration-ms="9297">
     <groups>
     </groups>
-    <test started-at="2022-02-06T20:23:04 CET" name="Default test" finished-at="2022-02-06T20:23:28 CET" duration-ms="23831">
-      <class name="d04_02_2022.Zadatak1">
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:d04_02_2022.Zadatak1@7ed7259e]" started-at="2022-02-06T20:23:04 CET" name="beforeMethod" finished-at="2022-02-06T20:23:11 CET" duration-ms="6078" status="PASS">
+    <test started-at="2022-02-07T14:40:32 CET" name="Default test" finished-at="2022-02-07T14:40:41 CET" duration-ms="9297">
+      <class name="d04_02_2022.Zadatak2">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:d04_02_2022.Zadatak2@647e447]" started-at="2022-02-07T14:40:32 CET" name="beforeMethod" finished-at="2022-02-07T14:40:34 CET" duration-ms="2806" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="proveraSortiranjaCene()[pri:0, instance:d04_02_2022.Zadatak1@7ed7259e]" started-at="2022-02-06T20:23:11 CET" name="proveraSortiranjaCene" finished-at="2022-02-06T20:23:28 CET" duration-ms="17688" status="PASS">
+        <test-method signature="testiranjeSorta()[pri:0, instance:d04_02_2022.Zadatak2@647e447]" started-at="2022-02-07T14:40:34 CET" name="testiranjeSorta" finished-at="2022-02-07T14:40:37 CET" duration-ms="2852" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- proveraSortiranjaCene -->
-      </class> <!-- d04_02_2022.Zadatak1 -->
+        </test-method> <!-- testiranjeSorta -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:d04_02_2022.Zadatak2@647e447]" started-at="2022-02-07T14:40:37 CET" name="afterMethod" finished-at="2022-02-07T14:40:41 CET" duration-ms="3598" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- d04_02_2022.Zadatak2 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
