@@ -56,7 +56,7 @@ public class Zadatak2 {
 	
 	@AfterMethod
 	public void afterMethod() throws InterruptedException {
-		Thread.sleep(3000);
+		Thread.sleep(5000);
 		driver.quit();
 	}
 }
