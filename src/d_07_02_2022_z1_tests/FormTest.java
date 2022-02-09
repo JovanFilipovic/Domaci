@@ -46,15 +46,15 @@ public class FormTest {
 		fp.getEmail().sendKeys("RokiMarciano@gmail.com");
 		fp.getDateOfBirth().sendKeys("02.02.02");
 
-		driver.findElement(By.xpath("//input[@name ='gender'][@value ='female']")).click();
-		
 		String gender = "male";
-		fp.getCheckBoxInput(gender).click();
+		fp.getRadioButton(gender).click();
 
 		fp.getCommentSection().sendKeys("Komentari su suvisni");
 		Select select = new Select(fp.getDropDownInput());
 		select.selectByVisibleText("QA");
-		fp.getCheckBoxInput("checkbox");
+
+		String checkBox = "read_books";
+		fp.getCheckBoxInput(checkBox).click();
 		fp.getSubmmitButto().click();
 		Assert.assertEquals(fp.isSaved(), true);
 
@@ -63,6 +63,6 @@ public class FormTest {
 	@AfterMethod
 	public void afterMethod() throws InterruptedException {
 		Thread.sleep(5000);
-		// driver.quit();
+		driver.quit();
 	}
 }

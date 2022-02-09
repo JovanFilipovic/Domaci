@@ -52,7 +52,7 @@ public class FormPage {
 	}
 
 	public boolean isSaved() {
-		return driver.findElement(By.xpath("/html/body/div/div/div[1]/div")).getAttribute("style")
-				.equalsIgnoreCase("visibility: visible");
+		return driver.findElement(By.xpath("//div[contains (@class, 'message-element poruka')]")).getAttribute("style")
+				.contentEquals("visibility: visible;");
 	}
 }
