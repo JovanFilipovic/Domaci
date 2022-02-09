@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="d04_02_2022.Zadatak2">
+      <class name="d_07_02_2022_z2_tests.ShopTest">
         <methods>
+          <include name="testMethod"/>
           <include name="beforeMethod"/>
-          <include name="testiranjeSorta"/>
           <include name="afterMethod"/>
         </methods>
-      </class> <!-- d04_02_2022.Zadatak2 -->
+      </class> <!-- d_07_02_2022_z2_tests.ShopTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
